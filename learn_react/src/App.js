@@ -3,7 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 // import NameCard from './components/NameCard'
 // import LikesButton from './components/LikesButton'
-import DigitalClock from './components/DigitalClock'
+// import DigitalClock from './components/DigitalClock'
+import CommentBoxtwo from './components/CommentBoxtwo'
 // const tags = ['恐龙', '足球小子']
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <DigitalClock />
+      <CommentBoxtwo />
     </div>
   );
 }
