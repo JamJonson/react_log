@@ -2,7 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 // import NameCard from './components/NameCard'
-import LikesButton from './components/LikesButton'
+// import LikesButton from './components/LikesButton'
+import DigitalClock from './components/DigitalClock'
 // const tags = ['恐龙', '足球小子']
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <LikesButton />
+      <DigitalClock />
     </div>
   );
 }
