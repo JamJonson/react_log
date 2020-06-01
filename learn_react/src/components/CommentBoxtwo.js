@@ -7,6 +7,9 @@ class CommentBoxtwo extends React.Component {
   }
   handleSubmit (event) {
     console.log(this.textInput.value)
+    console.log(this)
+    this.props.onAddComment(this.textInput.value)
+    this.textInput.value = ''
     // 阻止跳转
     event.preventDefault();
   }
@@ -18,6 +21,7 @@ class CommentBoxtwo extends React.Component {
           <input type="text" className="form-control" placeholder="请输入留言" ref={(textInput) => {this.textInput = textInput}}></input>
           <button type="submit" className="btn btn-primary">留言</button>
        </div>
+       <p>已有{this.props.commentsLength}条评论</p>
       </form>
     )
   }
