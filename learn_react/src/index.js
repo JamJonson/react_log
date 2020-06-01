@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import App from './App';
+import App from './App';
 import * as serviceWorker from './serviceWorker';
-import Welcome from './Welcome'
+// import Welcome from './Welcome' // 了解jxs
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Welcome />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
