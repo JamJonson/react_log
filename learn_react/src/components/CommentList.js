@@ -1,12 +1,20 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 class CommentList extends React.Component {
-  constructor(props){
-    super(props)
-    this.state ={
-    }
+  // constructor(props){
+  //   super(props)
+  //   this.state ={
+  //   }
+  // }
+  state = {
+
   }
-  deleteThis (index) {
+  // 给组件类指定属性
+  static propTypes = {
+    comments: PropTypes.array.isRequired
+  }
+  deleteThis = (index) => {
     this.props.deleteComment(index)
   }
   render() {

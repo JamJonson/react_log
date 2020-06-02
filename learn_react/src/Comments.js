@@ -4,20 +4,23 @@ import './App.css';
 import CommentBoxtwo from './components/CommentBoxtwo'
 import CommentList from './components/CommentList'
 class Comments extends React.Component{
-  constructor(props) {
-    super(props)
-    this.state = {
-      comments: ['this is my first reply']
-    }
-    this.addComment = this.addComment.bind(this)
-    this.deleteComment = this.deleteComment.bind(this)
+  // constructor(props) {
+  //   super(props)
+  //   this.state = {
+  //     comments: ['this is my first reply']
+  //   }
+  //   this.addComment = this.addComment.bind(this)
+  //   this.deleteComment = this.deleteComment.bind(this)
+  // }
+  state = {
+    comments: ['this is my first reply']
   }
-  addComment(comment) {
+  addComment = (comment) => {
     this.setState({
       comments: [...this.state.comments, comment]
     })
   }
-  deleteComment (index) {
+  deleteComment = (index) => {
     let commentArr = this.state.comments
     for (let i in this.state.comments) {
       if (Number(i) === index) {

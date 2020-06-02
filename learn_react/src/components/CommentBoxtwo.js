@@ -1,11 +1,11 @@
 import React from 'react'
 // 非受控组件(受控组件看CommentBox)
 class CommentBoxtwo extends React.Component {
-  constructor(pros) {
-    super(pros)
-    this.handleSubmit = this.handleSubmit.bind(this)
-  }
-  handleSubmit (event) {
+  // constructor(pros) {
+  //   super(pros)
+  //   this.handleSubmit = this.handleSubmit.bind(this)
+  // }
+  handleSubmit = (event) => {
     console.log(this.textInput.value)
     console.log(this)
     this.props.onAddComment(this.textInput.value)
