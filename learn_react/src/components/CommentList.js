@@ -8,11 +8,11 @@ class CommentList extends React.Component {
   //   }
   // }
   state = {
-
   }
   // 给组件类指定属性
   static propTypes = {
-    comments: PropTypes.array.isRequired
+    comments: PropTypes.array.isRequired,
+    deleteComment: PropTypes.func.isRequired
   }
   deleteThis = (index) => {
     this.props.deleteComment(index)
