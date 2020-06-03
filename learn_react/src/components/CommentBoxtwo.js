@@ -7,7 +7,7 @@ class CommentBoxtwo extends React.Component {
   // }
   handleSubmit = (event) => {
     console.log(this.textInput.value)
-    console.log(this)
+    console.log(process.env)
     this.props.onAddComment(this.textInput.value)
     this.textInput.value = ''
     // 阻止跳转
